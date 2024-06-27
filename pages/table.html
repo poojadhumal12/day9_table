@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Table</h2>
+            <button id="addCustomerBtn">+ Add Customer</button>
+        </div>
+        <input id="searchInput" type="text" placeholder="Search...">
+        <table>
+            <thead>
+                <tr>
+                    <th>Tracking ID</th>
+                    <th>Product</th>
+                    <th>Customer</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                    <th>Payment Mode</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="orderTable">
+                <tr>
+                    <td>#20462</td>
+                    <td>Hat</td>
+                    <td>Matt Dickerson</td>
+                    <td>13/05/2022</td>
+                    <td>$4.95</td>
+                    <td>Transfer Bank</td>
+                    <td><button class="delivered">Delivered</button></td>
+                    <td>
+                        <button class="edit"><i class="fas fa-edit"></i></button>
+                        <button class="delete"><i class="fas fa-trash-alt"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>#18933</td>
+                    <td>Laptop</td>
+                    <td>Wiktoria</td>
+                    <td>22/05/2022</td>
+                    <td>$8.95</td>
+                    <td>Cash on Delivery</td>
+                    <td><button class="delivered">Delivered</button></td>
+                    <td>
+                        <button class="edit"><i class="fas fa-edit"></i></button>
+                        <button class="delete"><i class="fas fa-trash-alt"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>#45169</td>
+                    <td>Phone</td>
+                    <td>Trixie Byrd</td>
+                    <td>15/06/2022</td>
+                    <td>$1,149.95</td>
+                    <td>Cash on Delivery</td>
+                    <td><button class="process">Process</button></td>
+                    <td>
+                        <button class="edit"><i class="fas fa-edit"></i></button>
+                        <button class="delete"><i class="fas fa-trash-alt"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>#34304</td>
+                    <td>Bag</td>
+                    <td>Brad Mason</td>
+                    <td>06/09/2022</td>
+                    <td>$899.95</td>
+                    <td>Transfer Bank</td>
+                    <td><button class="process">Process</button></td>
+                    <td>
+                        <button class="edit"><i class="fas fa-edit"></i></button>
+                        <button class="delete"><i class="fas fa-trash-alt"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>#17188</td>
+                    <td>Headset</td>
+                    <td>Sanderson</td>
+                    <td>25/09/2022</td>
+                    <td>$22.95</td>
+                    <td>Cash on Delivery</td>
+                    <td><button class="cancel">Canceled</button></td>
+                    <td>
+                        <button class="edit"><i class="fas fa-edit"></i></button>
+                        <button class="delete"><i class="fas fa-trash-alt"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>#73003</td>
+                    <td>Mouse</td>
+                    <td>Jun Redfern</td>
+                    <td>04/10/2022</td>
+                    <td>$54.95</td>
+                    <td>Transfer Bank</td>
+                    <td><button class="delivered">Delivered</button></td>
+                    <td>
+                        <button class="edit"><i class="fas fa-edit"></i></button>
+                        <button class="delete"><i class="fas fa-trash-alt"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>#58825</td>
+                    <td>Clock</td>
+                    <td>Miriam Kidd</td>
+                    <td>17/10/2022</td>
+                    <td>$174.95</td>
+                    <td>Transfer Bank</td>
+                    <td><button class="delivered">Delivered</button></td>
+                    <td>
+                        <button class="edit"><i class="fas fa-edit"></i></button>
+                        <button class="delete"><i class="fas fa-trash-alt"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>#44122</td>
+                    <td>T-shirt</td>
+                    <td>Dominic</td>
+                    <td>24/10/2022</td>
+                    <td>$249.95</td>
+                    <td>Cash on Delivery</td>
+                    <td><button class="delivered">Delivered</button></td>
+                    <td>
+                        <button class="edit"><i class="fas fa-edit"></i></button>
+                        <button class="delete"><i class="fas fa-trash-alt"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>#89094</td>
+                    <td>Monitor</td>
+                    <td>Shanice</td>
+                    <td>01/11/2022</td>
+                    <td>$899.95</td>
+                    <td>Transfer Bank</td>
+                    <td><button class="cancel">Canceled</button></td>
+                    <td>
+                        <button class="edit"><i class="fas fa-edit"></i></button>
+                        <button class="delete"><i class="fas fa-trash-alt"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>#85252</td>
+                    <td>Keyboard</td>
+                    <td>Poppy-Rose</td>
+                    <td>22/11/2022</td>
+                    <td>$6,948</td>
+                    <td>Transfer Bank</td>
+                    <td><button class="process">Process</button></td>
+                    <td>
+                        <button class="edit"><i class="fas fa-edit"></i></button>
+                        <button class="delete"><i class="fas fa-trash-alt"></i></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="pagination" id="pagination">
+            <button id="prevBtn">Previous</button>
+            <button id="nextBtn">Next</button>
+        </div>
+    </div>
+    <script src="../script/script.js"></script>
+</body>
+</html>
